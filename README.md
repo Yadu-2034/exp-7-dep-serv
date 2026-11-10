@@ -1,3 +1,19 @@
+#nginx (nginx-pod.yml)
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
+
+
+
 python-deployment.yaml
 
 apiVersion: apps/v1
