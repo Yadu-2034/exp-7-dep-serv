@@ -16,6 +16,7 @@ spec:
 
 python-deployment.yaml
 
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -32,9 +33,10 @@ spec:
     spec:
       containers:
       - name: python-web
-        image: dockersamples/flaskapp:latest
+        image: thetechdarts/sampleflaskapp:latest
         ports:
         - containerPort: 5000
+
 
 
 python-service.yaml
